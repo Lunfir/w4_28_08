@@ -4,14 +4,11 @@
 
 int main()
 {
-    Animal animal;
-    animal.setName("ANIMAL");
-    animal.eat();
+    // Animal animal("ANIMAL");
+    // Animal animal = Animal("ANIMAL");
 
-    Cat cat;
-    cat.eat();
+    Cat cat = Cat("CAT", "meat");
 
-    cat.setName("Meow");
     std::cout << "cat: " << cat.getName() << std::endl;
 
     return 0;

@@ -1,5 +1,25 @@
 #include "cat.h"
 
+Cat::Cat()
+{
+    using namespace std;
+    cout << __PRETTY_FUNCTION__ << endl;
+}
+
+Cat::Cat(const std::string& inName, const std::string& inFood)
+    : Animal(inName)
+    , food(inFood)
+{
+    using namespace std;
+    cout << __PRETTY_FUNCTION__ << endl;
+}
+
+Cat::~Cat()
+{
+    using namespace std;
+    cout << __PRETTY_FUNCTION__ << endl;
+}
+
 void Cat::eat()
 {
     using namespace std;
@@ -7,8 +27,3 @@ void Cat::eat()
     cout << __PRETTY_FUNCTION__ << endl;
     cout << "cat: " << this->getName() << endl;
 }
-
-// void Cat::walk()
-// {
-//     std::cout << __PRETTY_FUNCTION__ << std::endl;
-// }

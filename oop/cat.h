@@ -6,9 +6,13 @@
 class Cat : public Animal
 {
 public:
-    Cat() = default;
-    ~Cat() = default;
+    Cat();
+    Cat(const std::string& inName, const std::string& inFood);
+
+    ~Cat();
 
     void eat();
-    // void walk();
+
+private:
+    std::string food;
 };

@@ -5,8 +5,10 @@
 class Animal
 {
 public:
-    Animal() = default;
-    ~Animal() = default;
+    Animal();
+    Animal(const std::string& inName);
+    
+    ~Animal();
 
     void setName(const std::string& inName);
     const std::string& getName() const;
