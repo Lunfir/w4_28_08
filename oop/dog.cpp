@@ -1,45 +1,37 @@
-#include "cat.h"
+#include "dog.h"
 
-Cat::Cat()
+Dog::Dog()
 {
     using namespace std;
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-Cat::Cat(const std::string& inName)
+Dog::Dog(const std::string& inName)
     : Animal(inName)
 {
     using namespace std;
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-Cat::Cat(const std::string& inName, const std::string& inFood)
-    : Animal(inName)
-    , food(inFood)
+Dog::~Dog()
 {
     using namespace std;
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-Cat::~Cat()
+void Dog::eat()
 {
     using namespace std;
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-void Cat::eat()
+void Dog::sleep()
 {
     using namespace std;
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-void Cat::sleep()
-{
-    using namespace std;
-    cout << __PRETTY_FUNCTION__ << endl;
-}
-
-void Cat::meow()
+void Dog::bark()
 {
     using namespace std;
     cout << __PRETTY_FUNCTION__ << endl;

@@ -36,13 +36,6 @@ const std::string& Animal::getName() const
     return this->name;
 }
 
-
-void Animal::eat()
-{
-    using namespace std;
-    cout << __PRETTY_FUNCTION__ << endl;
-};
-
 void Animal::walk()
 {
     std::cout << __PRETTY_FUNCTION__ << std::endl;

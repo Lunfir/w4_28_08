@@ -7,13 +7,15 @@ class Cat : public Animal
 {
 public:
     Cat();
+    Cat(const std::string& inName);
     Cat(const std::string& inName, const std::string& inFood);
 
     ~Cat();
 
-    void eat();
+    void eat() override;
+    void sleep();
     void meow();
 
 private:
-    std::string food;
+    std::string food = "MILK";
 };
