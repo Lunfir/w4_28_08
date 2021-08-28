@@ -13,6 +13,13 @@ Animal::Animal(const std::string& inName)
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
+Animal::Animal(const Animal& inAnimal)
+    : name(inAnimal.name)
+{
+    using namespace std;
+    cout << __PRETTY_FUNCTION__ << endl;
+}
+
 Animal::~Animal()
 {
     using namespace std;

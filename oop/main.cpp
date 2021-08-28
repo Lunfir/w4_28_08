@@ -4,12 +4,9 @@
 
 int main()
 {
-    // Animal animal("ANIMAL");
-    // Animal animal = Animal("ANIMAL");
+    Animal cat = Cat();
 
-    Cat cat = Cat("CAT", "meat");
-
-    std::cout << "cat: " << cat.getName() << std::endl;
+    std::cout << "-----------" << std::endl;
 
     return 0;
 };

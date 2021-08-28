@@ -12,6 +12,7 @@ public:
     ~Cat();
 
     void eat();
+    void meow();
 
 private:
     std::string food;

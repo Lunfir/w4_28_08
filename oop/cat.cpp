@@ -23,7 +23,12 @@ Cat::~Cat()
 void Cat::eat()
 {
     using namespace std;
-
     cout << __PRETTY_FUNCTION__ << endl;
-    cout << "cat: " << this->getName() << endl;
+}
+
+void Cat::meow()
+{
+    using namespace std;
+    cout << __PRETTY_FUNCTION__ << endl;
+    cout << this->getName() << " says MEOW" << endl;
 }

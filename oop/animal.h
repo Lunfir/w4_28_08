@@ -7,7 +7,8 @@ class Animal
 public:
     Animal();
     Animal(const std::string& inName);
-    
+    Animal(const Animal& inAnimal);
+
     ~Animal();
 
     void setName(const std::string& inName);
