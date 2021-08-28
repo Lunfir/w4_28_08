@@ -2,10 +2,13 @@
 
 void Cat::eat()
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    using namespace std;
+
+    cout << __PRETTY_FUNCTION__ << endl;
+    cout << "cat: " << this->getName() << endl;
 }
 
-void Cat::walk()
-{
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-}
+// void Cat::walk()
+// {
+//     std::cout << __PRETTY_FUNCTION__ << std::endl;
+// }
