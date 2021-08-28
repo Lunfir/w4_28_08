@@ -12,7 +12,8 @@ int main()
     std::cout << "----------------\n";
 
     // catDog->Cat::eat();
-    catDog->eat();
+    //catDog->eat();
+    std::cout << "catDog: " << catDog->getName() << std::endl;
 
     std::cout << "----------------\n";
     delete catDog;
