@@ -19,11 +19,11 @@ Dog::~Dog()
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-void Dog::eat()
-{
-    using namespace std;
-    cout << __PRETTY_FUNCTION__ << endl;
-}
+// void Dog::eat()
+// {
+//     using namespace std;
+//     cout << __PRETTY_FUNCTION__ << endl;
+// }
 
 void Dog::sleep()
 {

@@ -1,4 +1,4 @@
-all: animal cat dog imain
+all: animal cat dog catdog imain
 	g++ *.o -o main.exe
 
 imain: main.cpp
@@ -12,6 +12,9 @@ cat: cat.cpp
 
 dog: dog.cpp
 	g++ -c dog.cpp -o dog.o
+
+catdog: catdog.cpp
+	g++ -c catdog.cpp -o catdog.o
 
 clear:
 	rm *.o *.exe

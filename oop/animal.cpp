@@ -45,3 +45,9 @@ void Animal::sleep()
 {
     std::cout << __PRETTY_FUNCTION__ << std::endl;
 };
+
+void Animal::eat()
+{
+    using namespace std;
+    cout << __PRETTY_FUNCTION__ << endl;
+}

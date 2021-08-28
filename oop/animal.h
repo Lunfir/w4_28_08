@@ -14,7 +14,7 @@ public:
     void setName(const std::string& inName);
     const std::string& getName() const;
  
-    virtual void eat() = 0; // pure virtual method
+    void eat();
     void sleep();
 
 protected:

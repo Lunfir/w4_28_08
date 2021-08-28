@@ -3,7 +3,7 @@
 #include <iostream>
 #include "animal.h"
 
-class Dog : public Animal
+class Dog : virtual public Animal
 {
 public:
     Dog();
@@ -11,7 +11,7 @@ public:
 
     ~Dog();
 
-    void eat() override;
+    // void eat();
     void sleep();
     void bark();
 };

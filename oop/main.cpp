@@ -4,30 +4,18 @@
 #include "animal.h"
 #include "cat.h"
 #include "dog.h"
+#include "catdog.h"
 
 int main()
 {
-    std::vector<Animal*> zoo;
+    CatDog* catDog = new CatDog("CATDOG");
+    std::cout << "----------------\n";
 
-    Animal* cat = new Cat("tom");
-    std::cout << "----------------" << std::endl;
+    // catDog->Cat::eat();
+    catDog->eat();
 
-    Animal* dog = new Dog("goofy");
-    std::cout << "----------------" << std::endl;
-
-    zoo.push_back(dog);
-    zoo.push_back(cat);
-
-    for (Animal* animal : zoo)
-    {
-        animal->eat();
-    }
-    std::cout << "----------------" << std::endl;
-
-    for (Animal* animal : zoo) 
-    {
-        delete animal;
-    }
+    std::cout << "----------------\n";
+    delete catDog;
 
     return 0;
 };

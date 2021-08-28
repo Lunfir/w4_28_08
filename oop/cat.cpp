@@ -27,11 +27,11 @@ Cat::~Cat()
     cout << __PRETTY_FUNCTION__ << endl;
 }
 
-void Cat::eat()
-{
-    using namespace std;
-    cout << __PRETTY_FUNCTION__ << endl;
-}
+// void Cat::eat()
+// {
+//     using namespace std;
+//     cout << __PRETTY_FUNCTION__ << endl;
+// }
 
 void Cat::sleep()
 {
